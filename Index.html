@@ -1,32 +1,133 @@
-<section id="elvis-presley" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre Elvis Presley">
-  <div class="container d-flex align-items-center">
-    <div class="col-4 d-flex justify-content-center">
-      <img src="img/elvis.png" class="rounded-pill" width="273" height="331" loading="lazy">
-    </div>
-    <div class="col-5">
-      <h2>Elvis Presley: A História do Rei do Rock</h2>
-      <p class="p-2">
-        **Infância e Juventude:**
-        Elvis Aaron Presley nasceu em 8 de janeiro de 1935, em Tupelo, Mississippi. Criado em um ambiente humilde, desde cedo demonstrou talento para a música. Seu primeiro contato com o gospel veio através da igreja, e aos 11 anos ganhou seu primeiro violão. A mudança para Memphis, em 1948, foi essencial para sua formação artística.
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>História de Elvis Presley</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
 
-        **Carreira Musical e Impacto:**
-        Em 1953, gravou sua primeira demo no Sun Studio, chamando a atenção de Sam Phillips. Sua fusão de country, blues e gospel levou ao sucesso de "That's All Right" em 1954, marcando o início de sua revolução musical. Seu primeiro álbum, "Elvis Presley" (1956), consolidou o rock como um fenômeno mundial.
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
 
-        **Cinema e Cultura Pop:**
-        Além da música, Elvis se tornou uma figura icônica no cinema, estrelando filmes como *Love Me Tender* e *Viva Las Vegas*. Seus movimentos de dança e estilo visual ajudaram a definir a juventude dos anos 50 e 60, tornando-o um símbolo de rebeldia e liberdade.
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
 
-        **Legado Duradouro:**
-        Apesar dos desafios nos anos 70, Elvis permaneceu relevante, realizando shows inesquecíveis como *Aloha from Hawaii* (1973). Sua morte em 1977, aos 42 anos, deixou um impacto profundo na cultura pop, mas sua música e influência continuam vivas até hoje.
-      </p>
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .image-box {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+    }
+
+    .image-box img {
+      border-radius: 10px;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+
+    .text-box {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Elvis Presley: O Rei do Rock</h1>
+  </header>
+
+  <div class="container">
+    <section id="elvis-presley" class="secao-historia" tabindex="0" aria-label="Seção explicativa sobre Elvis Presley">
+      <div class="content">
+        <div class="image-box">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Elvis_Presley_1973_RCA_Records_and_Tapes_publicity_-_cropped.png" 
+               loading="lazy" 
+               alt="Elvis Presley em 1973, imagem promocional da RCA Records">
+        </div>
+        <div class="text-box">
+          <h2>Infância e Juventude</h2>
+          <p>
+            Elvis Aaron Presley nasceu em 8 de janeiro de 1935, em Tupelo, Mississippi, e cresceu em um ambiente humilde. Seu primeiro contato com o gospel ocorreu na igreja, e aos 11 anos ele ganhou seu primeiro violão. A mudança para Memphis, em 1948, foi essencial para sua formação artística.
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="image-box">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Elvis_Presley_in_1958.jpg" 
+               loading="lazy" 
+               alt="Elvis Presley em 1958, imagem histórica">
+        </div>
+        <div class="text-box">
+          <h2>Carreira Musical e Impacto</h2>
+          <p>
+            Em 1953, gravou sua primeira demo no Sun Studio, chamando a atenção de Sam Phillips. Sua fusão de country, blues e gospel levou ao sucesso de "That's All Right" em 1954, marcando o início de sua revolução musical. Seu primeiro álbum, "Elvis Presley" (1956), consolidou o rock como um fenômeno mundial.
+          </p>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="image-box">
+          <img src="https://commons.wikimedia.org/wiki/File:Elvis_Presley_promoting_Jailhouse_Rock.jpg" 
+               loading="lazy" 
+               alt="Elvis Presley promovendo Jailhouse Rock">
+        </div>
+        <div class="text-box">
+          <h2>Legado Duradouro</h2>
+          <p>
+            Apesar dos desafios nos anos 70, Elvis permaneceu relevante, realizando shows inesquecíveis como *Aloha from Hawaii* (1973). Sua morte em 1977, aos 42 anos, deixou um impacto profundo na cultura pop, mas sua música e influência continuam vivas até hoje.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="opcoes-acessibilidade" class="opcoes-acessibilidade">
+      <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
+      <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
+      <button id="alterna-contraste" class="btn btn-primary fw-bold">
+        <i class="bi bi-shadows"></i>
+      </button>
     </div>
   </div>
-</section>
 
-<div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-  <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
-  <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
-  <button id="alterna-contraste" class="btn btn-primary fw-bold">
-    <i class="bi bi-shadows"></i>
-  </button>
-</div>
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
 
